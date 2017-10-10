@@ -5,7 +5,7 @@ Twig PCRE Filters for OctoberCMS.
 
 This enables support for using Pearl-compatible-regular-expression PHP (regex) functions within your Twig markup.
 
-## Supported functions:
+## Supported PCRE functions:
 
  - [preg_filter](https://www.php.net/manual/en/function.preg-filter.php)
  - [preg_grep](https://www.php.net/manual/en/function.preg-grep.php)
@@ -13,3 +13,7 @@ This enables support for using Pearl-compatible-regular-expression PHP (regex) f
  - [preg_quote](https://www.php.net/manual/en/function.preg-quote.php)
  - [preg_replace](https://www.php.net/manual/en/function.preg-replace.php)
  - [preg_split](https://www.php.net/manual/en/function.preg-split.php)
+ 
+ ## Additional functions:
+ 
+ - **preg_find**: Performs a regular expression match and returns the results.

@@ -36,6 +36,7 @@ class Plugin extends PluginBase
                 'preg_quote'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_quote'],
                 'preg_replace' => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_replace'],
                 'preg_split'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_split'],
+                'preg_find'    => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_find'],
             ],
             'functions' => [
                 'preg_filter'  => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_filter'],
@@ -43,7 +44,8 @@ class Plugin extends PluginBase
                 'preg_match'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_match'],
                 'preg_quote'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_quote'],
                 'preg_replace' => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_replace'],
-                'preg_split'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_split']
+                'preg_split'   => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_split'],
+                'preg_find'    => ['LukeTowers\TwigPCRE\Classes\TwigPcreExtensions', '_preg_find'],
             ],
         ];
     }

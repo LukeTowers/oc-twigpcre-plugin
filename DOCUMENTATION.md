@@ -32,7 +32,18 @@
 
 Please read the PHP docs for a more detailed explanation of all functions.
 
-**Usage Examples:**
+
+## Additional functions:
+
+`preg_find(subject, pattern, &matches = [])`: Performs a regular expression match and returns the results. If no match is found, false is returned. If `matches` is provided, then it will be filled with the results of the `preg_match()` call as documented in the [PHP docs](http://php.net/manual/en/function.preg-match.php). If `matches` is not provided, then the first match that met the entire expression (`$matches[0]`) will be returned.
+
+** Example **
+```twig
+{% set pageTitleNum = preg_find(this.page.title, '/\d+/') %}
+```
+
+
+## Usage Examples:
 
 *Simple Word Replacement*
 ```twig

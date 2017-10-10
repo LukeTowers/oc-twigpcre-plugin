@@ -1,1 +1,2 @@
 1.0.1: First version of TwigPCRE
+1.0.2: Add support for preg_find and composer

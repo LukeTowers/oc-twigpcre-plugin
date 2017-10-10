@@ -54,7 +54,32 @@ class TwigPcreExtensions
         } else {
             return preg_match($pattern, $subject);
         }
-    }   
+    }
+    
+    /**
+     * Perform a regular expression match and returns the results
+     *
+     * @param string $subject
+     * @param string $pattern
+     * @param array $matches If matches is provided, then it is filled with the results of search. $matches[0] will contain the text that matched the full pattern, $matches[1] will have the text that matched the first captured parenthesized subpattern, and so on. If it isn't, but the full pattern is matched, then it will ret
+     * @return mixed bool||string Will return matched string if $matches isn't provided and a match is found
+     */
+    public static function _preg_find($subject, $pattern, &$matches = [])
+    {
+        if (!isset($subject)) {
+            return null;
+        } else {
+	        // Swallow errors as well as no results
+	        $matched = (bool) preg_match($pattern, $subject, $matches);
+	        
+	    // Return full match if matches wasn't provided
+        } if ($matched && (func_num_args() < 3)) {
+	        return $matches[0];
+	    // Return whether or not the value was found.
+	    } else {
+		    return $matched;
+		}
+    }
     
     /**
      * Quote regular expression characters.

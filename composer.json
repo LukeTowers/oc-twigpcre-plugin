@@ -1,0 +1,17 @@
+{
+    "name": "luketowers/oc-twigpcre-plugin",
+    "type": "october-plugin",
+    "description": "Extends Twig to support Pearl-Compatible-Regular-Expressions (Regex) through Twig filters and functions",
+    "homepage": "https://github.com/LukeTowers/oc-twigpcre-plugin",
+    "keywords": ["october", "octobercms", "twig", "regex",  "regular-expression"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Towers",
+            "email": "octobercms@luketowers.ca"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+    }
+}
